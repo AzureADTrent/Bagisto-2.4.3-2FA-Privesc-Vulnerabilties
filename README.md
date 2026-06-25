@@ -2,7 +2,7 @@
 
 Independent security research against a self-hosted Bagisto 2.4.3 instance (Docker, default installation). All findings were confirmed through manual testing in a private lab environment. No production systems were tested.
 
-This writeup covers three findings that have since been **patched** in the current release line. A separate reported finding remains unaddressed in the latest version at the time of writing and is intentionally excluded from this document to avoid exposing live deployments.
+This writeup covers three findings that have since been **patched** in the current release line.
 
 | Researcher | AzureADTrent |
 |---|---|
@@ -35,8 +35,6 @@ Fix versions were verified against source across releases: Findings 2 and 3 (the
 | 1 | Critical | 2FA bypass via `GET /admin/two-factor/disable` | Fixed in 2.4.7 |
 | 2 | High | ACL fails open on missing route names (Bouncer bypass) | Fixed in 2.4.5 |
 | 3 | High | Restricted admin can assign super-admin role | Fixed in 2.4.5 |
-
-(A separate critical finding from the same engagement remains unaddressed in the latest version and is excluded; see note above.)
 
 ---
 
