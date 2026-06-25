@@ -22,7 +22,7 @@ This writeup covers three findings that have since been **patched** in the curre
 | 2026-05-07 | Vendor acknowledged receipt ("we'll check your reported issue and let you know") |
 | 2026-06-01 | Requested a status update |
 | 2026-06-02 | Vendor replied: "We are still checking your reported issues. After proper checking, we'll let you know." |
-| 2026-06 (later) | Findings 1, 2, and 3 were fixed in a subsequent release. The ticket was closed; the vendor stated the issues had been identified internally. |
+| 2026-06-25 | Findings 1, 2, and 3 were fixed in a subsequent release. The ticket was closed; the vendor stated the issues had been identified internally. |
 
 Fix versions were verified against source across releases: Findings 2 and 3 (the ACL fail-open chain) were fixed in 2.4.5. Finding 1 (the 2FA bypass) remained present in 2.4.5 and 2.4.6 and was fixed in 2.4.7, three release cycles after it was reported. 2.4.5 shipped with release notes referencing resolved security vulnerabilities and did patch Findings 2 and 3, yet the critical 2FA bypass remained unpatched through both 2.4.5 and 2.4.6.
 
